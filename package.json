@@ -1,0 +1,16 @@
+{
+  "name": "let-ready",
+  "version": "0.2.0",
+  "description": "Track compliance certificates, tenancies and deposit deadlines for London rental properties.",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/index.js",
+    "backup": "node --disable-warning=ExperimentalWarning scripts/backup.js",
+    "test": "node --disable-warning=ExperimentalWarning --test --test-concurrency=1 test/*.test.js"
+  }
+}
